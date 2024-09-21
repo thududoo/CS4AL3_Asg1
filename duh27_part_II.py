@@ -40,3 +40,4 @@ class RM:
 if __name__ == "__main__":
     model = RM()
     model.train_ols()
+    model.plot()

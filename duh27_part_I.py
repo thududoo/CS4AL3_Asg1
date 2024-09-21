@@ -7,7 +7,7 @@ import random
 
 CSV_PATH = "./gdp-vs-happiness.csv"
 RATE = 1e-2
-MAX_STEP = 1000
+MAX_STEP = 10000
 THRESHOLD = 1e-6
 
 class LRM:
@@ -58,7 +58,7 @@ class LRM:
                 break
             slope = slope - slope_pd * RATE
             intrc = intrc - intrc_pd * RATE
-            epoch += 1
+            # epoch
 
         print(f"{slope=}, {intrc=}")
         print(f"{slope_pd=}, {intrc_pd=}\n")
